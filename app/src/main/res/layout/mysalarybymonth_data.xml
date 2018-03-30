@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/swipe_menu">
+
+    <LinearLayout
+        android:id="@+id/lin_btn"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="工资年月:" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/salaryDate"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-12"
+                    />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="姓名:"
+                    />
+
+                <TextView
+                    android:id="@+id/realName"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="陈飞"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="岗位名称:"
+                    />
+
+                <TextView
+
+                    android:id="@+id/positionName"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/colorPrimary"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="部门名称:"
+                    />
+
+                <TextView
+
+                    android:id="@+id/departmentName"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="应发小计:"
+                    />
+
+                <TextView
+
+                    android:id="@+id/planTotalFee"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="实发小计:"
+                    />
+
+                <TextView
+                    android:id="@+id/actTotalFee"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="个税:"
+                    />
+
+                <TextView
+
+                    android:id="@+id/tax"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="社保缴纳基数:"
+                    />
+
+                <TextView
+                    android:id="@+id/baseSalarySocialSecurity"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="公积金(个人):"
+                    />
+
+                <TextView
+                    android:id="@+id/accumulationFundPersosn"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="公积金(公司):"
+                    />
+                <TextView
+                    android:id="@+id/accumulationFundCompany"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="社保(个人):"
+                    />
+
+                <TextView
+
+                    android:id="@+id/socialSecurityPerson"
+                    android:textColor="#9450CD"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="社保(公司):"
+                    />
+
+                <TextView
+
+                    android:id="@+id/socialSecurityCompany"
+                    android:textColor="#CE713A"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+        <TextView
+            android:id="@+id/sb_btn"
+            android:textColor="@color/white"
+            android:background="@color/base"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="社保(个人)明细"
+            android:drawableRight="@mipmap/next"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="养老:"
+                    />
+
+                <TextView
+                    android:id="@+id/pension_person"
+                    android:textColor="#9450CD"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="基本医疗:"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/base_care_person"
+                    android:textColor="#9450CD"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/base"
+                />
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="失业:"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/unemployment_person"
+                    android:textColor="#9450CD"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:background="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp" />
+
+        <TextView
+            android:id="@+id/sb_btn1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/base"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="社保(公司)明细"
+            android:drawableRight="@mipmap/next"
+            />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lin2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="养老:"
+                            />
+
+                        <TextView
+                            android:id="@+id/pension_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/base"
+                        />
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="基本医疗:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/base_care_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/base"
+                        />
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="失业:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/unemployment_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:background="@color/base"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="生育:"
+                            />
+
+                        <TextView
+                            android:id="@+id/birth_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/base"
+                        />
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="工伤:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/injury_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/base"
+                        />
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="补充医疗:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/treatment_company"
+                            android:textColor="#CE713A"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:background="@color/base"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/yf_btn"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/base"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="应发小计"
+            android:drawableRight="@mipmap/next"
+            />
+
+       <!-- <LinearLayout
+
+            android:id="@+id/lin3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="事假扣款:"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/salary_total1"
+                        android:textColor="#ce2924"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="绩效工资:"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/salary_total2"
+                        android:textColor="#2044bc"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="考勤扣款:"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/salary_total3"
+                        android:textColor="#ce2924"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:background="@color/base"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="计件工资:"
+                        />
+
+                    <TextView
+                        android:id="@+id/salary_total4"
+                        android:textColor="#2044bc"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="高温补贴:"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/salary_total5"
+                        android:textColor="#2044bc"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="绩效工资:"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/salary_total6"
+                        android:textColor="#2044bc"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:background="@color/base"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/grid"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lin"
+            >
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/sf_btn"
+            android:textColor="@color/white"
+            android:background="@color/base"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="实发小计"
+            android:drawableRight="@mipmap/next"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="应发小计:"
+                        />
+
+                    <TextView
+                        android:id="@+id/planTotalFee1"
+                        android:textColor="#2044bc"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="公积金(个人):"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/accumulationFundPersosns"
+                        android:textColor="#f90700"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:background="@color/base"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="社保(个人):"
+                        />
+
+                    <TextView
+                        android:id="@+id/socialSecurityPersons"
+                        android:textColor="#f90700"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="个税:"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/taxs"
+                        android:textColor="#f90700"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/base"
+                    />
+            </LinearLayout>
+            <TextView
+                android:background="@color/base"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#e9f5f4"
+        android:layout_weight="1.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/touxiang"
+                android:layout_centerInParent="true"
+                app:civ_border_width="1dp"
+               />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="彭云,余额￥434343434"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       >
+
+        <com.example.zhujia.dxracer_factory.Tools.FixedGridLayout
+            android:id="@+id/grid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cellHeight="100dp"
+            app:cellWidth="110dp"
+            >
+            <LinearLayout
+                android:id="@+id/pdsc"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+
+                    android:id="@+id/Singlerow"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/pdsc"
+                    android:text="page1"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="排单生产"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/plck"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/Batchwarehouse"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/plck"
+                    android:text="page1"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="批量仓库"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zlck"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/zlckms"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/plck"
+                    android:text="page1"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="滞留仓库"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xhck"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/xhck"
+                    android:text="page1"
+                    android:id="@+id/Spotwarehouse"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="现货仓库"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:id="@+id/shck"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+
+
+                    android:id="@+id/Aftersalewarehouse"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/shck"
+                    android:text="page1"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="售后仓库"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+
+
+                android:id="@+id/cgkl"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/purchasingmg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cggl"
+                    android:text="page1"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="采购管理"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+
+                android:id="@+id/gnch"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/Domesticshipments"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/gnch"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="国内出货"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:id="@+id/gwch"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/Foreignshipments"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/gwch"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="国外出货"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/rsgl"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/personnelmanagement"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/rsgl"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="人事管理"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/wdgz"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/Mysalary"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/wdgz"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="我的工资"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/wpgl"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/Managementgoods"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/wpgl"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="物品管理"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/sbgl"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.zhujia.dxracer_factory.Tools.MaskableImageView
+                    android:id="@+id/devicemanagement"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/sbgl"
+                    android:textColor="@color/monsoon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="设备管理"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </com.example.zhujia.dxracer_factory.Tools.FixedGridLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

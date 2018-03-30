@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status">
+        <item>请选择</item>
+        <item>新建</item>
+        <item>正常</item>
+        <item>停用</item>
+    </string-array>
+
+    <string-array name="statuss">
+        <item>请选择</item>
+        <item>启用</item>
+        <item>停用</item>
+    </string-array>
+
+    <string-array name="orderType">
+        <item>请选择</item>
+        <item>批量订单</item>
+        <item>售后订单</item>
+        <item>现货订单</item>
+        <item>定制订单</item>
+    </string-array>
+
+    <string-array name="Enterprisescale">
+        <item>请选择</item>
+        <item>1-49</item>
+        <item>50-99</item>
+        <item>100-199</item>
+        <item>200-299</item>
+        <item>300-</item>
+    </string-array>
+
+    <string-array name="invoicetype">
+        <item>增值税专用发票</item>
+        <item>增值税普通发票</item>
+    </string-array>
+
+    <string-array name="after">
+        <item>出货前</item>
+        <item>出货后</item>
+    </string-array>
+    <string-array name="payth">
+        <item>T/T</item>
+        <item>L/C</item>
+    </string-array>
+
+    <string-array name="Life">
+        <item>请选择</item>
+        <item>1-3</item>
+        <item>4-9</item>
+        <item>10-19</item>
+        <item>20-29</item>
+        <item>30-39</item>
+        <item>40-99</item>
+        <item>100-</item>
+    </string-array>
+
+    <string-array name="region">
+        <item>请选择</item>
+        <item>亚洲</item>
+        <item>中美洲</item>
+        <item>CIS</item>
+        <item>欧洲</item>
+        <item>中东</item>
+        <item>北美洲</item>
+        <item>大洋洲</item>
+        <item>南美洲</item>
+        <item>东南亚</item>
+    </string-array>
+</resources>
